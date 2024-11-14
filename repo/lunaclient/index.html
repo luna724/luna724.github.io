@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>LunaClient home</title>
-    <link rel="stylesheet" href="../../style.css">
-</head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/repo/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <script src="/repo/make_repo_tables.js"></script>
+    <script>
+        window.onload = function () {
+            addVersionRow("luna724/LunaClient");
+        }
+    </script>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -21,12 +31,43 @@
     }
 </style>
 
+</head>
 <body>
 
 <div class="center">
 <h1 class="center">LunaClient</h1>
+    <h4 class="center">LunaClient by. luna724</h4>
+    <table id="version-table">
+        <tr>
+            <th>Latest</th>
+            <th>Version</th>
+            <th>Author</th>
+            <th>Features</th>
+        </tr>
+    </table>
+</div>
 
-
+<div class="links">
+    <div class="link-column">
+        <a class="link-item-red" href="https://www.youtube.com/playlist?list=PLk8Xf59dJV3tVhxFQzWlHLU4QDdoG4WaP" target="_blank">
+            <i class="fab fa-youtube"></i> シリーズ
+        </a>
+    </div>
+    <div class="link-column">
+        <a class="link-item-red" href="https://discord.gg/lunaclient" target="_blank">
+            <i class="fab fa-discord"></i> Discordサーバー
+        </a>
+    </div>
+    <div class="link-column">
+        <a class="link-item-red" href="https://github.com/LunaClient" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </div>
+    <div class="link-column">
+        <a class="link-item-red" href="/repo/lunaclient/docs/home" target="_blank">
+            <i class="fab fa-wikipedia-w"></i> Wiki
+        </a>
+    </div>
 </div>
 <a class="back-link-right" href="https://github.com/luna724/LunaClient" target="_blank">View in GitHub</a>
 

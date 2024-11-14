@@ -35,3 +35,27 @@
 .center {
     text-align: center;
 }
+
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    text-align: center;
+    background-color: #c3c3c3;
+    color: #000000;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}

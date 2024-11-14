@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.link-item {
+    display: flow;
+    padding: 15px;
+    margin: 10px 0;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 200px;
+    text-align: center;
+    max-width: 300px;
+    width: 75%;
+    transition: background-color 0.2s;
+}
+.link-item:hover {
+    background-color: #0056b3;
+}

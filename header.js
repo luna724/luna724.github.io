@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // ヘッダーの読み込み
-    fetch("/home/header.html")
+    fetch("/header.html")
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML("afterbegin", data);
@@ -18,15 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
             .split("/")
             .filter(part => part !== "");
 
-        let breadcrumbHTML = '<a href="/home">Home</a>';
+        // 最初の2つ（"luna724.github.io" 部分）を無視
+        const relevantPaths = pathArray.slice(2);
+
+
+        let breadcrumbHTML = '';
         let accumulatedPath = "/home";
 
-        pathArray.forEach((part, index) => {
+        relevantPaths.forEach((part, index) => {
             accumulatedPath += `/${part}`;
             if (index === pathArray.length - 1) {
-                breadcrumbHTML += ` &gt; <span>${part}</span>`;
+                breadcrumbHTML += ` <a class="tonext">&raquo;</a> <span>${part}</span>`;
             } else {
-                breadcrumbHTML += ` &gt; <a href="${accumulatedPath}">${part}</a>`;
+                breadcrumbHTML += ` <a class="tonext">&raquo;</a> <a href="${accumulatedPath}">${part}</a>`;
             }
         });
 

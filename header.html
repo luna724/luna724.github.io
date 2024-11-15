@@ -40,7 +40,7 @@
     }
 
     .logo a {
-        color: #fff;
+        color: #007bff;
         font-size: 24px;
         text-decoration: none;
     }
@@ -59,6 +59,11 @@
 
     .navbar a:hover {
         text-decoration: underline;
+    }
+
+    .tonext {
+        color: #0052ac;
+        font-size:16px;
     }
 
     body {
@@ -83,49 +88,14 @@
         color: #fff;
     }
 
-    .minimize {
-        font-size:12px
-    }
-
 </style>
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        // パンくずリストの生成関数
-        function generateBreadcrumb() {
-            const breadcrumb = document.getElementById("breadcrumb");
-            if (!breadcrumb) {
-                console.warn("パンくずリストの要素が見つかりません");
-                return;
-            }
 
-            const pathArray = window.location.pathname
-                .replace("/home", "") // ルートディレクトリの調整
-                .split("/")
-                .filter(part => part !== "");
-
-            let breadcrumbHTML = '<a href="/home">Home</a>';
-            let accumulatedPath = "/home";
-
-            pathArray.forEach((part, index) => {
-                accumulatedPath += `/${part}`;
-                if (index === pathArray.length - 1) {
-                    breadcrumbHTML += ` &gt; <span>${part}</span>`;
-                } else {
-                    breadcrumbHTML += ` &gt; <a href="${accumulatedPath}">${part}</a>`;
-                }
-            });
-
-            breadcrumb.innerHTML = breadcrumbHTML;
-        }
-
-        // パンくずリストの生成を呼び出し
-        generateBreadcrumb();
-    });
 </script>
 
 <header class="header">
     <div class="header-content">
-        <h2 class="logo"><a href="/home">luna724's hub</a> <span id="breadcrumb" class="minimize"></span><</h2>
+        <h2 class="logo"><a href="/home">luna724's hub</a> <span id="breadcrumb"></span></h2>
         <nav class="navbar">
             <ul>
                 <li><a href="/">Bio</a></li>

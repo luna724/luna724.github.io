@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e1e; /* ライトテーマの場合 */
+    color: #e3e3e3; /* テキストカラー */
+    font-family: Arial, sans-serif;
+}
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.topbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: #444;
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.center {
+    text-align: center;
+}

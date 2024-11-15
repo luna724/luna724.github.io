@@ -59,3 +59,9 @@
 .link-item:hover {
     background-color: #0056b3;
 }
+
+.whats_this{
+    text-align: center;
+    padding: 15px;
+    color: #e6f8fd
+}

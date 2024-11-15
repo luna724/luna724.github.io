@@ -90,38 +90,36 @@
 </style>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        // ヘッダーの読み込み
-        fetch("/header.html")
-            .then(response => response.text())
-            .then(data => {
-                document.body.insertAdjacentHTML("afterbegin", data);
-                generateBreadcrumb();
-            });
-
         // パンくずリストの生成関数
         function generateBreadcrumb() {
             const breadcrumb = document.getElementById("breadcrumb");
-            const pathArray = window.location.pathname.split("/").filter(part => part !== "");
-            let breadcrumbHTML = '';
+            if (!breadcrumb) {
+                console.warn("パンくずリストの要素が見つかりません");
+                return;
+            }
 
-            // Homeリンクを追加
-            breadcrumbHTML += '<a href="/home">Home</a>';
+            const pathArray = window.location.pathname
+                .replace("/home", "") // ルートディレクトリの調整
+                .split("/")
+                .filter(part => part !== "");
 
-            // パスに基づいてリンクを生成
-            let accumulatedPath = '';
+            let breadcrumbHTML = '<a href="/home">Home</a>';
+            let accumulatedPath = "/home";
+
             pathArray.forEach((part, index) => {
                 accumulatedPath += `/${part}`;
                 if (index === pathArray.length - 1) {
-                    // 最後の要素は現在のページなのでリンクではない
                     breadcrumbHTML += ` &gt; <span>${part}</span>`;
                 } else {
                     breadcrumbHTML += ` &gt; <a href="${accumulatedPath}">${part}</a>`;
                 }
             });
 
-            // パンくずリストを挿入
             breadcrumb.innerHTML = breadcrumbHTML;
         }
+
+        // パンくずリストの生成を呼び出し
+        generateBreadcrumb();
     });
 </script>
 

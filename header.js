@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .filter(part => part !== "");
 
         // 最初の2つ（"luna724.github.io" 部分）を無視
-        const relevantPaths = pathArray.slice(2);
+        const relevantPaths = pathArray.slice(1);
 
 
         let breadcrumbHTML = '';

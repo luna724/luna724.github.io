@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         let breadcrumbHTML = '';
-        let accumulatedPath = "/home";
+        let accumulatedPath = "/repo";
 
         relevantPaths.forEach((part, index) => {
             accumulatedPath += `/${part}`;

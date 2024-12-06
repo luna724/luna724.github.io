@@ -32,3 +32,8 @@
     background-color: #7a7a7a;
 }
 
+.row div {
+    display: flex;
+    justify-content: space-between; /* 子要素間を均等に配置 */
+    align-items: center; /* 縦方向の中央揃え */
+}

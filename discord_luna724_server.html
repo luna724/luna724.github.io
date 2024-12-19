@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discord - Redirect</title>
+
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <h1>Redirecting to Discord invite link...</h1>
+
+  <script>
+    fetch("/discord.gg")
+            .then(response => response.text())
+            .then(url => {
+              // テキストファイル内のURLにリダイレクト
+              window.location.href = "https://discord.gg/"+url.trim();
+            })
+  </script>
+</body>
+</html>

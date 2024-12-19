@@ -133,7 +133,7 @@ body {
   border-radius: 2px;
   border: none;
   margin: 10px;
-  padding: 5;
+  padding: 5px;
 }
 
 .modal-button {
@@ -175,5 +175,54 @@ body {
     align-items: center; /* 縦並び時に中央揃え */
     width: 100%; /* カテゴリ全体を画面幅に合わせる */
     text-align: center; /* 中央揃え */
+  }
+}
+
+/* アニメーション部分 */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 適用: 初期状態は隠した状態 */
+.animate {
+  opacity: 0;
+  animation: fadeInSlide 1.5s ease-out forwards; /* アニメーション速度やイージングを設定 */
+}
+
+/* 遅れを追加 */
+.animate-delay-1 {
+  animation-delay: 10ms;
+}
+
+.animate-delay-2 {
+  animation-delay: 1s;
+}
+
+/* リンクホバーしたときにゆらゆら動く */
+.link-item:hover {
+  transform: translateY(-3px);
+  transition: transform 0.25s ease;
+}
+
+body {
+  background: linear-gradient(90deg, #2e2e2e, #000000);
+  background-size: 200%;
+  animation: scrollBackground 9999s linear infinite !important; /* ゆっくり動かす */
+  will-change: background-position;
+}
+
+@keyframes scrollBackground {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100%;
   }
 }

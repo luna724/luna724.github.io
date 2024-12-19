@@ -18,16 +18,17 @@
 <a href="/home" class="back-link">◀ Home</a>
 
 <div class="profile">
-  <img src="https://avatars.githubusercontent.com/u/111692896?v=4" alt="Profile Image">
-  <h3>星乃るな (luna724)</h3>
-  <p>INFPの日本人です、気軽にどーぞ(はあと</p>
+  <a href="https://github.com/luna724" target="_blank"><img src="https://avatars.githubusercontent.com/u/111692896?v=4"
+       alt="Profile Image" class="animate animate-delay-1"></a>
+  <h3 class="">星乃るな (luna724)</h3>
+  <p class="">INFPの日本人です、気軽にどーぞ(はあと</p>
 </div>
 <a href="https://discordapp.com/users/1123616332349452288" target="_blank"><i class="fab fa-discord"></i> [Contact] Discord (iloveichika2)</a>
 
 
 <div class="links">
   <div class="category">
-    <strong>メインSNS</strong>
+    <strong class="animate-delay-2">メインSNS</strong>
     <div class="link-column">
       <a class="link-item" href="https://discordapp.com/users/1123616332349452288" target="_blank"><i class="fab fa-discord"></i> Discord</a>
       <a class="link-item" href="https://github.com/luna724" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -41,7 +42,7 @@
   </div>
 
   <div class="category">
-    <strong>使ってないSNS</strong>
+    <strong class="animate-delay-2">使ってないSNS</strong>
     <div class="link-column">
       <a class="link-item" href="https://x.com/luna__k1bych724" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
       <a class="link-item" href="https://www.twitch.tv/1una724" target="_blank"><i class="fab fa-twitch"></i> Twitch</a>
@@ -51,7 +52,7 @@
   </div>
 
   <div class="category">
-    <strong>その他</strong>
+    <strong class="animate-delay-2">その他</strong>
     <div class="link-column">
       <a class="link-item" href="https://www.patreon.com/luna_iloveichika" target="_blank"><i class="fab fa-patreon"></i> Patreon</a>
       <a class="link-item" href="https://orcid.org/0009-0002-8943-6216" target="_blank"><i class="fab fa-orcid"></i> ORC-ID</a>
@@ -60,7 +61,7 @@
   </div>
   
   <div class="category">
-    <strong>なんとなく置いた</strong>
+    <strong class="animate-delay-2">なんとなく置いた</strong>
     <div class="link-column">
       <a class="link-item" href="https://www.tiktok.com/@youtube_luna724" target="_blank"><i class="fab fa-tiktok"></i> ｺﾞﾐ(Tiktokともいう)</a>
       <a class="link-item-red" href="https://github.com/404" target="_blank"><i class="fab fa-instagram"></i> ｺﾞﾐｽﾀｸﾞﾗﾑ</a>
@@ -68,18 +69,18 @@
   </div>
 
 <!-- アカウント選択画面 -->
-<div id="pixiv-modal" class="modal modal-roots">
+<div id="pixiv-modal" class="modal modal-roots animate-delay-2">
   <div class="modal-content">
     <p>Pixiv: 二つのアカウント</p>
     <div class="row">
-      <button id="main-pixiv" class="modal-button">メイン (星乃るな) </button>
+      <button id="main-pixiv" class="modal-button-red">メイン (星乃るな) </button>
       <button id="sub-pixiv" class="modal-button">サブ (星るな) </button>
     </div>
     <button class="close-modal modal-text-red">閉じる</button>
   </div>
 </div>
 
-<div id="youtube-modal" class="modal modal-roots">
+<div id="youtube-modal" class="modal modal-roots ">
   <div class="modal-content">
     <p>Pixiv: 二つのアカウント</p>
     <div class="row">
@@ -88,6 +89,7 @@
     </div>
     <button class="close-modal modal-text-red">閉じる</button>
   </div>
+</div>
 </div>
 <script>
   // Pixiv
@@ -147,6 +149,17 @@
       btn.style.display = 'none';
     });
   }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // すべてのアニメーション要素を取得
+    const animatedItems = document.querySelectorAll(".animate");
+    animatedItems.forEach((item) => {
+      // ページ読み込み後にクラスを1つずつ追加しアニメーションをトリガー
+      setTimeout(() => {
+        item.style.opacity = "1"; // フォールバック対策CSS
+      }, 100);
+    });
+  });
   
 </script>
 </body>

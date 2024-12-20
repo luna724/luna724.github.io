@@ -37,3 +37,11 @@
     justify-content: space-between; /* 子要素間を均等に配置 */
     align-items: center; /* 縦方向の中央揃え */
 }
+
+/* ミッドナイト・ブループルテーマ */
+body {
+    background: linear-gradient(to left, #000000, #001155);
+    background-size: 200%;
+    animation: scrollBackground 9999s linear infinite !important; /* ゆっくり動かす */
+    will-change: background-position;
+}

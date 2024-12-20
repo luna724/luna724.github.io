@@ -212,10 +212,7 @@ body {
 }
 
 body {
-  background: linear-gradient(90deg, #2e2e2e, #000000);
-  background-size: 200%;
-  animation: scrollBackground 9999s linear infinite !important; /* ゆっくり動かす */
-  will-change: background-position;
+
 }
 
 @keyframes scrollBackground {

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/styles/global.css">
+  <title>LunaClient home</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/repo/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="/header.js"></script>
+
+  <script src="/repo/make_repo_tables.js"></script>
+  <script>
+    window.onload = function () {
+      addVersionRow("luna724/SDPEM");
+    }
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #a100ff;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      text-align: center;
+      background-color: #c3c3c3;
+      color: #000000;
+    }
+
+    tr:hover {
+      background-color: #777777;
+      color: #f8fffe;
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="center">
+  <h1 class="center">SD-PEM</h1>
+  <h4 class="center">SD-PEM by. luna724</h4>
+  <table id="version-table">
+    <tr>
+      <th>Latest</th>
+      <th>Version</th>
+      <th>Author</th>
+      <th>Features</th>
+    </tr>
+  </table>
+</div>
+
+<div class="links">
+  <div class="link-column">
+    <a class="link-item-red" href="https://luna724.github.io/discord_luna724_server" target="_blank">
+      <i class="fab fa-discord"></i> Discordサーバー
+    </a>
+  </div>
+  <div class="link-column">
+    <a class="link-item-red" href="https://github.com/luna724/SDPEM" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+  </div>
+</div>
+
+<br />
+<h2 class="center">SD-PEMって何？</h2>
+<div class="whats_this">
+  <p>SD-PEMは、Stable-Diffusion Inference用に作られた拡張スクリプトです。</p>
+  <p>β1.0はまだバージョンが存在しない開発段階であり、使用タイミングによっては起動できない場合もあります。</p>
+  <p></p>
+</div>
+
+<a class="back-link-right" href="https://github.com/luna724/SDPEM" target="_blank">View in GitHub</a>
+
+<!-- ホームに戻るリンク -->
+<p>
+  <a class="back-link" href="/home">ホームに戻る</a>
+</p>
+
+</body>
+</html>

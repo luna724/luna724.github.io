@@ -169,6 +169,10 @@ body {
   border-bottom: 2px solid white;
 }
 
+.bold {
+  border-bottom: 2px solid white;
+}
+
 @media (max-width: 430px) {
   .links {
     flex-direction: column; /* カテゴリ全体を縦並びに */

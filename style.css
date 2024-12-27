@@ -1,6 +1,6 @@
 .back-link {
     position: fixed;
-    top: 75px;
+    top: 100px;
     left: 10px;
     color: #ffffff;
     text-decoration: none;
@@ -17,7 +17,7 @@
 
 .back-link-right {
     position: fixed;
-    top: 75px;
+    top: 100px;
     right: 10px;
     color: #8c00ff;
     text-decoration: none;

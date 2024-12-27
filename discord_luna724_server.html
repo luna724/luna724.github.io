@@ -13,7 +13,6 @@
     fetch("/discord.gg")
             .then(response => response.text())
             .then(url => {
-              // テキストファイル内のURLにリダイレクト
               window.location.href = "https://discord.gg/"+url.trim();
             })
   </script>

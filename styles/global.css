@@ -41,3 +41,54 @@ a:hover {
 .center {
     text-align: center;
 }
+
+/* 全体のフォント設定 - Markdownはシンプルなフォントが基本 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* 見出しスタイル */
+h1, h2, h3, h4, h5, h6 {
+    margin: 20px 0 10px;
+    font-weight: bold;
+}
+
+
+/* テーブルスタイル */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    color: #1e1e1e;
+    background-color: #f3f3f3;
+    font-weight: bold;
+}
+
+/* リンク */
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 水平線 */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}

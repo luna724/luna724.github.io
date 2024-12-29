@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://luna724.github.io/repo/lunaclient/docs/commands.html">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Commands - LunaClient v2 Docs</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        <link rel="canonical" href="https://luna724.github.io/repo/lunaclient/docs/lc_commands/lc_filemanager.html">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>/lc-filemanager - LunaClient v2 Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="index.html">LunaClient v2 Docs</a>
+                <a class="navbar-brand" href="../index.html">LunaClient v2 Docs</a>
 
                 <!-- Expanded navigation -->
                 <div id="navbar-collapse" class="navbar-collapse collapse">
@@ -53,17 +53,9 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#commands" class="nav-link">Commands</a>
+            <li class="nav-item" data-bs-level="1"><a href="#lc-filemanager" class="nav-link">/lc-filemanager</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#lcg" class="nav-link">/lcg</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#lcg_cli" class="nav-link">/lcg_cli</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#lc-filemanger" class="nav-link">/lc-filemanger</a>
+            <li class="nav-item" data-bs-level="2"><a href="#command-usage" class="nav-link">Command usage</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -74,65 +66,39 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="commands">Commands</h1>
+<h1 id="lc-filemanager">/lc-filemanager</h1>
+<h2 id="command-usage">Command usage</h2>
 <ul>
-<li>Not all commands for LunaClient</li>
+<li>header accepts <code>lc-filemanager</code>, <code>lc-file</code></li>
+<li>/&lt;header&gt; &lt;run/help&gt; &lt;filepath&gt;</li>
 </ul>
-<h2 id="lcg">/lcg</h2>
+<h3 id="lc-filemanager-run-filepath-docs"><code>/lc-filemanager run &lt;filepath&gt;</code> docs</h3>
 <ul>
-<li>AutoGarden Main Commands</li>
-<li><a href="lcg_commands/lcg_overall.html">More Info</a></li>
+<li>execute selected files command.</li>
+<li>in syntax is like mcfunction.</li>
+<li><code>#</code> to comment out..</li>
+<li><code>/</code> prefix not needed.. (except <code>/say</code>, <code>/tellraw</code>)</li>
+<li>separate command with line..</li>
+<li>but <code>/say &lt;message&gt;</code> to send server-sided chat message</li>
+<li><code>/tellraw &lt;message&gt;</code> to send client-sided message</li>
+<li><code>$wait {time(ms)}</code> to sleep. (use Thread.sleep(). sometime this cause crash!)</li>
 </ul>
-<h2 id="lcg_cli">/lcg_cli</h2>
-<ul>
-<li>AutoGarden Internal commands</li>
-<li>/lcg_cli &lt;commands&gt; &lt;args&gt;</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>commands</th>
-<th>args</th>
-<th>description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>import_official</td>
-<td><import_name> (cloud_key)</td>
-<td>load video template from local. <a href="lcg_commands/lcg_cli/import_official.html">(key list in here)</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="lc-filemanger">/lc-filemanger</h2>
-<ul>
-<li>LunaClient FileManager</li>
-<li>
-<p>run command from file, like mcfunction</p>
-</li>
-<li>
-<p>/lc-filemanager &lt;command&gt; &lt;file&gt;</p>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>command</th>
-<th>file</th>
-<th>description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>run</td>
-<td>filepath (relpath from config/lunaclient)</td>
-<td>execute selected files command. separate with line</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><a href="lc_commands/lc_filemanager.html">More information here</a></li>
-</ul></div>
+<p>example file:</p>
+<pre><code class="language-mcfunction"># example commands
+
+# join skyblock
+play sb
+
+# wait a 1sec (NOT RECOMMENDED!)
+$wait 1000
+
+# notice to client
+/tellraw You Joined to skyblock with `/lc-filemanager`!
+
+# client-side commands can also used
+# goto dungeon hub with NEU (/dh)
+dh
+</code></pre></div>
             </div>
         </div>
 
@@ -140,13 +106,13 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

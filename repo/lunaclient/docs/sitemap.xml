@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://luna724.github.io/repo/lunaclient/docs/index.html</loc>
-         <lastmod>2024-12-27</lastmod>
+         <lastmod>2024-12-29</lastmod>
     </url>
     <url>
          <loc>https://luna724.github.io/repo/lunaclient/docs/commands.html</loc>
-         <lastmod>2024-12-27</lastmod>
+         <lastmod>2024-12-29</lastmod>
+    </url>
+    <url>
+         <loc>https://luna724.github.io/repo/lunaclient/docs/lc_commands/lc_filemanager.html</loc>
+         <lastmod>2024-12-29</lastmod>
     </url>
     <url>
          <loc>https://luna724.github.io/repo/lunaclient/docs/lcg_commands/lcg_overall.html</loc>
-         <lastmod>2024-12-27</lastmod>
+         <lastmod>2024-12-29</lastmod>
     </url>
     <url>
          <loc>https://luna724.github.io/repo/lunaclient/docs/lcg_commands/lcg_cli/import_official.html</loc>
-         <lastmod>2024-12-27</lastmod>
+         <lastmod>2024-12-29</lastmod>
     </url>
 </urlset>

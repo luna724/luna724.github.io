@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luna724 Discord</title>
+</head>
+<body>
+    <script>
+      fetch("/discord.gg")
+        .then(response => response.text())
+        .then(url => {
+          window.location.href = "https://discord.gg/"+url.trim();
+        })
+    </script>
+</body>
+</html>
